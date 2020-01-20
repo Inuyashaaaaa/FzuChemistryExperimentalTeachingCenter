@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$ecms.getString($site,'tree_Node_Name')</title>
+    <link rel="stylesheet" href="$ecms.getResourceUrl()/css/swiper.min.css">
+    <link rel="stylesheet" href="$ecms.getResourceUrl()/css/index.css">
+    <script src="$ecms.getResourceUrl()/js/jquery.js"></script>
+    <script src="$ecms.getResourceUrl()/js/index.js"></script>
+    <script src="$ecms.getResourceUrl()/js/swiper.min.js"></script>
+</head>
+<body>
+    <div class="all">
+        <div id="header">
+            #parse("$ecms.getTemplateUrl()/header.vm")
+        </div>
+        <div id="index_main">
+            <div class="index_main_slide">
+                <div class="swiper-container" id="index_main_top_gallery">
+                    <div class="swiper-wrapper">
+						#foreach( $document1 in $ecms.getTopPlugins('-11999-12885-141165-', false, 5, 2, false))
+                        <div class="swiper-slide">
+                            <div id="index_main_top_gallery_title">
+                                $ecms.getString($document,'verify_Title')           
+                            </div>
+                            <img src="$ecms.getContextPath()$ecms.getString($document1,'main_Image')" width="1280px" height="380px">
+                        </div>
+                        #end
+                    </div>
+                </div>
+                <div class="index_main_gallery_arrow" id="index_main_left_arrow"><img src="$ecms.getResourceUrl()/img/arrow-lift.png" width="60px" height="60px"></div>
+                <div class="index_main_gallery_arrow" id="index_main_right_arrow"><img src="$ecms.getResourceUrl()/img/arrow-right.png" width="60px" height="60px"></div>
+                <div id="index_main_top_thumbs">
+                    #foreach( $document1 in $ecms.getTopPlugins('-11999-12885-141165-', false, 5, 2, false))
+                    <img src="$ecms.getContextPath()$ecms.getString($document1,'main_Image')" width="60px" height="24px">
+                    #end
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            #parse("$ecms.getTemplateUrl()/footer.vm")
+        </div>
+    </div>
+</body>
+</html>
