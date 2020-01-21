@@ -19,7 +19,8 @@ $(function() {
             slideChange: function(){
                 changeArrowVisibility()
             }
-        }
+        },
+        // autoplay: true,
     })  
 
     // 缩略图
@@ -71,8 +72,12 @@ $(function() {
 
     // 中心动态轮播图
     let trendsGallerySwiper = new Swiper('#index_main_trends_gallery',{
+        effect: 'fade',
+        speed: 500,
+        // autoplay: true,
         pagination: {
             el: '#index_main_trends_gallery .swiper-pagination',
+            clickable :true
         },
     }) 
 
