@@ -171,6 +171,12 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
     width: 100%;
 }
 
+#index_main_content_mid {
+    height: 265px;
+    display: flex;
+    width: 100%;
+}
+
 #index_main_content_top_left_border {
     width: 940px;
     height: 580px;
@@ -185,6 +191,36 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
     height: 580px;
     padding: 0px 8px 8px 8px;
     /* 后期可能删掉 */
+    box-shadow: inset 0px 0px 2px 2px rgb(232, 232, 232);
+    border-radius: 3px;
+}
+
+#index_main_content_internet_border {
+    width: 400px;
+    height: 265px;
+    padding: 8px 8px 8px 8px;
+    /* 后期可能删掉 */
+    margin-top: 8px;
+    box-shadow: inset 0px 0px 2px 2px rgb(232, 232, 232);
+    border-radius: 3px;
+}
+
+#index_main_content_instrument_border {
+    width: 524px;
+    height: 265px;
+    padding: 8px 8px 8px 8px;
+    /* 后期可能删掉 */
+    margin-top: 8px;
+    box-shadow: inset 0px 0px 2px 2px rgb(232, 232, 232);
+    border-radius: 3px;
+}
+
+#index_main_content_example_border {
+    width: 305px;
+    height: 265px;
+    padding: 8px 8px 8px 8px;
+    /* 后期可能删掉 */
+    margin-top: 8px;
     box-shadow: inset 0px 0px 2px 2px rgb(232, 232, 232);
     border-radius: 3px;
 }
@@ -204,6 +240,34 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
     box-shadow: inset 0px 0px 2px 2px rgb(232, 232, 232);
     border-radius: 2px;
 }
+
+#index_main_content_internet {
+    width: 400px;
+    height: 265px;
+    /* 后期可能删掉 */
+    box-shadow: inset 0px 0px 2px 2px rgb(232, 232, 232);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+#index_main_content_instrument {
+    width: 524px;
+    height: 265px;
+    /* 后期可能删掉 */
+    box-shadow: inset 0px 0px 2px 2px rgb(232, 232, 232);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+#index_main_content_example {
+    width: 305px;
+    height: 265px;
+    /* 后期可能删掉 */
+    box-shadow: inset 0px 0px 2px 2px rgb(232, 232, 232);
+    border-radius: 2px;
+}
+
+
 
 #index_main_content_top_left_top {
     width: 100%;
@@ -459,3 +523,40 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
     line-height: 25px;
 }
 
+#index_main_content_internet_title {
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 10px 18px 10px;
+}
+
+.index_main_content_internet_dec {
+    height: 63px;
+    margin: 8px 8px 0px 8px;
+    text-align: center;
+    background-size: cover;
+}
+
+.index_main_content_internet_dec_style {
+    display: block;
+    padding-top: 17px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: #fff;
+}
+
+#index_main_content_instrument_title {
+    width: 504px;
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 10px 0px 10px;
+}
+
+#index_main_ins_gallery .swiper-wrapper{
+    transition-timing-function: linear;
+ }
+
+#index_main_ins_gallery {
+    margin: 0px 30px;
+ }

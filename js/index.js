@@ -20,7 +20,14 @@ $(function() {
                 changeArrowVisibility()
             }
         },
-        // autoplay: true,
+        // slidesPerView: 4,
+        // autoplay: {
+        //     delay: 0,
+        //     stopOnLastSlide: false,
+        //     disableOnInteraction: true,
+        // },
+        // loop: true,
+        // speed: 2000
     })  
 
     // 缩略图
@@ -80,5 +87,28 @@ $(function() {
             clickable :true
         },
     }) 
+
+    let insGallerySwiper = new Swiper('#index_main_ins_gallery',{
+        on:{
+            slideChange: function(){
+                changeArrowVisibility()
+            }
+        },
+        slidesPerView: 3,
+        autoplay: {
+            delay: 0,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+        },
+        spaceBetween: 1,
+        loop: true,
+        speed: 4000,
+        freeMode: true
+    })  
+
+    setInterval(() => {
+        insGallerySwiper.autoplay.start()
+    }, 5000);
+    
 
 })
