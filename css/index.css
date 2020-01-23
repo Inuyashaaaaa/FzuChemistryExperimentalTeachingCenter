@@ -172,7 +172,7 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
 }
 
 #index_main_content_mid {
-    height: 265px;
+    height: 290px;
     display: flex;
     width: 100%;
 }
@@ -217,7 +217,7 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
 
 #index_main_content_example_border {
     width: 305px;
-    height: 265px;
+    height: 228px;
     padding: 8px 8px 8px 8px;
     /* 后期可能删掉 */
     margin-top: 8px;
@@ -261,10 +261,11 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
 
 #index_main_content_example {
     width: 305px;
-    height: 265px;
+    height: 228px;
     /* 后期可能删掉 */
     box-shadow: inset 0px 0px 2px 2px rgb(232, 232, 232);
     border-radius: 2px;
+    overflow: hidden;
 }
 
 
@@ -277,7 +278,6 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
 #index_main_content_top_left_top1 {
     height: 30px;
     display: flex;
-    padding-left: 5px;
 }
 
 #index_main_content_top_left_top2 {
@@ -300,12 +300,13 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
     width: 520px;
     display: flex;
     justify-content: space-between;
-    padding: 4px 40px 0px 20px;
+    padding: 4px 0px 0px 20px;
 }
 
 .index_main_content_title_with_icon {
     width: 115px;
     display: flex;
+    padding-left: 10px;
     justify-content: space-between;
 }
 
@@ -415,7 +416,6 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
     display: flex;
     padding-top: 4px;
     height: 32px;
-    padding-left: 6px;
     background-color: #f2f2f2;
 }
 
@@ -424,6 +424,14 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
 }
 
 #index_main_content_title_with_icon_tea {
+    
+}
+
+#index_main_content_title_with_icon_exa {
+    
+}
+
+#index_main_content_title_with_icon_ins {
     padding-right: 160px;
 }
 
@@ -524,7 +532,14 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
 }
 
 #index_main_content_internet_title {
-    width: 380px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 0px 18px 0px;
+}
+
+#index_main_content_example_title {
+    width: 290px;
     display: flex;
     justify-content: space-between;
     margin: 4px 10px 18px 10px;
@@ -547,16 +562,115 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
 }
 
 #index_main_content_instrument_title {
-    width: 504px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 4px 10px 0px 10px;
+    margin: 4px 0px 0px 0px;
+}
+
+#index_main_content_example_title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 0px 0px 0px;
 }
 
 #index_main_ins_gallery .swiper-wrapper{
     transition-timing-function: linear;
  }
 
+#index_main_ins_gallery .swiper-slide {
+    text-align: center;
+}
+
 #index_main_ins_gallery {
-    margin: 0px 30px;
+    margin: 30px 30px;
  }
+
+#index_main_instrument_slide .swiper-button-prev{
+    --swiper-navigation-color: grey;/* 单独设置按钮颜色 */
+    --swiper-navigation-size: 25px;/* 设置按钮大小 */
+    position: absolute;
+    top: 60px;
+    left: 5px;
+}
+
+#index_main_instrument_slide .swiper-button-next{
+    --swiper-navigation-color: grey;/* 单独设置按钮颜色 */
+    --swiper-navigation-size: 25px;/* 设置按钮大小 */
+    position: absolute;
+    top: 60px;
+    right: 5px;
+}
+
+#index_main_instrument_slide {
+    position: relative;
+}
+
+.index_main_ins_gallery_images_dec {
+    font-size: 15px;
+}
+
+#index_main_instrument_reservation {
+    display: flex;
+    padding-left: 10px;
+}
+
+#index_main_instrument_reservation_dec {
+    display: block;
+    font-size: 16px;
+    color: #50a8db;
+}
+
+#index_main_instrument_reservation_img {
+    padding-top: 2px;
+    padding-left: 6px;;
+}
+
+.index_main_content_example_content {
+    height: 60px;
+    width: auto
+}
+
+#index_main_content_search {
+    width: 309px;
+    height: 27px;
+    font-size: 15px;
+    padding: 8px 3px 3px 8px;
+    box-shadow: inset 0px 0px 5px 2px lightgray;
+}
+
+#index_main_content_bot_top {
+    margin-top: 10px;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+}
+
+.index_main_content_more_update {
+    font-size: 16px;
+    color: #addffb;
+    padding-right: 25px;
+}
+
+#index_main_show_slide {
+    margin: 10px 25px;
+    position: relative;
+}
+
+#index_main_show_slide .swiper-button-prev{
+    --swiper-navigation-color: grey;/* 单独设置按钮颜色 */
+    --swiper-navigation-size: 35px;/* 设置按钮大小 */
+    position: absolute;
+    top: 80px;
+    left: -25px;
+}
+
+#index_main_show_slide .swiper-button-next{
+    --swiper-navigation-color: grey;/* 单独设置按钮颜色 */
+    --swiper-navigation-size: 35px;/* 设置按钮大小 */
+    position: absolute;
+    top: 80px;
+    right: -25px;
+}

@@ -89,26 +89,40 @@ $(function() {
     }) 
 
     let insGallerySwiper = new Swiper('#index_main_ins_gallery',{
-        on:{
-            slideChange: function(){
-                changeArrowVisibility()
-            }
-        },
-        slidesPerView: 3,
+        slidesPerView: '3',
         autoplay: {
-            delay: 0,
+            delay: 3000,
             stopOnLastSlide: false,
-            disableOnInteraction: true,
+            disableOnInteraction: false
         },
         spaceBetween: 1,
-        loop: true,
-        speed: 4000,
-        freeMode: true
+        speed: 500,
+        navigation: {
+            nextEl: '#index_main_instrument_slide .swiper-button-next',
+            prevEl: '#index_main_instrument_slide .swiper-button-prev',
+        },
+        allowTouchMove: false
     })  
 
-    setInterval(() => {
-        insGallerySwiper.autoplay.start()
-    }, 5000);
+    let showGallerySwiper = new Swiper('#index_main_show_gallery', {
+        slidesPerView: '6',
+        autoplay: {
+            delay: 3000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false
+        },
+        spaceBetween: 1,
+        speed: 500,
+        navigation: {
+            nextEl: '#index_main_show_slide .swiper-button-next',
+            prevEl: '#index_main_show_slide .swiper-button-prev',
+        },
+        allowTouchMove: false
+    })
+
+    // setInterval(() => {
+    //     insGallerySwiper.autoplay.start()
+    // }, 5000);
     
 
 })
