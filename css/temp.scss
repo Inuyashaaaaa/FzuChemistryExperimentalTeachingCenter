@@ -60,7 +60,6 @@ pre {
     overflow: auto;
 }
 
-
 /* 以下为主页部分 */
 #index_main {
     min-width: 1280px;
@@ -70,6 +69,15 @@ pre {
     background: #fff;
     margin-left: auto;
     margin-right: auto;
+    /* 首页轮播图 */
+    #index_main_slide {
+        position: relative;
+        width: 1280px;
+        height: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }    
 }
 
 /* 假装有头部和脚 之后删掉!!! */
@@ -81,15 +89,6 @@ pre {
     height: 200px;
 }
 
-/* 首页轮播图 */
-#index_main_slide {
-    position: relative;
-    width: 1280px;
-    height: 380px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-}
 
 /* 轮播图的缩略图 */
 #index_main_top_thumbs {
